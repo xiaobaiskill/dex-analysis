@@ -210,7 +210,7 @@ $\large X * Y = K = L^2$
   
 ### 撤销池子
 * 添加池子的流程
-![添加支持流程](../image/add-liquidity-process.png)
+![添加支持流程](../image/remove-liquidity-process.png)
 
 * 撤池子的推导公式
     * 当前已知的三个条件
