@@ -60,24 +60,33 @@
 #### 单个区间内的swap 兑换公式
 
 * 用X 兑换Y
+
     $\Delta X = \frac{L}{\sqrt{P_{next}}} - \frac{L}{\sqrt{P_{current}}}$
 
     $\Delta Y = L\sqrt{P_{current}} - L\sqrt{P_{next}}$
     
     * 已知$\Delta X$ 求$P_{next}$ 
+
         => $\frac{L}{\sqrt{P_{next}}} = \Delta X + \frac{L}{\sqrt{P_{current}}}$
+
         => $\sqrt{P_{next}} = \frac{L}{\Delta X + \frac{L}{\sqrt{P_{current}}}}$
+        
         => $\sqrt{P_{next}} = \frac{L}{\frac{\Delta X \sqrt{P_{curent}} + L}{\sqrt{P_{current}}}}$
+        
         => $\sqrt{P_{next}} = \frac{L\sqrt{P_{curent}}}{\Delta X \sqrt{P_{curent}} + L}$
     
     * 代入 求$\Delta Y$
+
         => $\Delta Y = L(\sqrt{P_{current}} - \frac{L\sqrt{P_{curent}}}{\Delta X \sqrt{P_{curent}} + L})$
+
         =>$\Delta Y = L(\frac{\Delta X P_{curent}}{\Delta X \sqrt{P_{curent}} + L})$
-         =>$\Delta Y = \frac{L\Delta X P_{curent}}{\Delta X \sqrt{P_{curent}} + L}$
+
+        =>$\Delta Y = \frac{L\Delta X P_{curent}}{\Delta X \sqrt{P_{curent}} + L}$
     
     * ![x for y](../../image/uniswap_v3_x_for_y.png)
 
 * 用Y 兑换X
+
     $\Delta X = \frac{L}{\sqrt{P_{current}}} - \frac{L}{\sqrt{P_{next}}}$
 
     $\Delta Y = L\sqrt{P_{next}} - L\sqrt{P_{current}}$

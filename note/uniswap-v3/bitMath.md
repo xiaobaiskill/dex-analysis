@@ -79,5 +79,5 @@ function leastSignificantBit(uint256 x) internal pure returns (uint8 r) {
         if (x & 0x1 > 0) r -= 1;
     }
 
-通过不断的判断, 与 一半位的左右 是否有值, 来确定,是否要右移, 或进行下一个一半位的左右
+通过不断的判断, 与 一半位的左右 是否有值, 来确定,是否要右移, 或进行下一个一半位的左右 判断
 ```
