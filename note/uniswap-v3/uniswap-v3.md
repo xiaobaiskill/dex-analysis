@@ -65,7 +65,7 @@
 
     $\Delta Y = L\sqrt{P_{current}} - L\sqrt{P_{next}}$
     
-    * 已知$\Delta X$ 求$P_{next}$ 
+    * 已知 $\Delta X$ 求 $P_{next}$ 
 
         => $\frac{L}{\sqrt{P_{next}}} = \Delta X + \frac{L}{\sqrt{P_{current}}}$
 
@@ -75,7 +75,7 @@
         
         => $\sqrt{P_{next}} = \frac{L\sqrt{P_{curent}}}{\Delta X \sqrt{P_{curent}} + L}$
     
-    * 代入 求$\Delta Y$
+    * 代入 求 $\Delta Y$
 
         => $\Delta Y = L(\sqrt{P_{current}} - \frac{L\sqrt{P_{curent}}}{\Delta X \sqrt{P_{curent}} + L})$
 
@@ -91,7 +91,7 @@
 
     $\Delta Y = L\sqrt{P_{next}} - L\sqrt{P_{current}}$
 
-    * 已知$\Delta Y$ 求$P_{next}$ 
+    * 已知 $\Delta Y$ 求 $P_{next}$ 
 
         =>$L\sqrt{P_{next}}= L\sqrt{P_{current}} + \Delta Y$
 
@@ -99,7 +99,7 @@
 
         => $\sqrt{P_{next}} = \sqrt{P_{current}} + \frac{\Delta Y}{L}$
     
-    * 代入 求$\Delta X$
+    * 代入 求 $\Delta X$
         => $\Delta X = \frac{L}{\sqrt{P_{current}} + \frac{\Delta Y}{L}} - \frac{L}{\sqrt{P_{current}}}$
 
         => $\Delta X = \frac{L\sqrt{P_{current}} - L\sqrt{P_{current}} - \Delta Y}{\sqrt{P_{current}(\sqrt{P_{current}} - \frac{\Delta Y}{L})}}$
@@ -108,7 +108,7 @@
     
     * ![y for x](../../image/uniswap_v3_y_for_x.png)
 
-* `SqrtPriceMath.sol` 如何得到$P_{next}$
+* [`SqrtPriceMath.sol` 如何得到$P_{next}$](./sqrtPriceMath.md)
 
 
 
